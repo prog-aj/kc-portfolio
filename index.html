@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KC Collado — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Grid overlay decoration -->
+  <div class="grid-overlay"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-kc">KC</span>
+        <span class="logo-dot">·</span>
+        <span class="logo-name">Collado</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span>BSIT · 3rd Year · CICS</span>
+      </div>
+      <h1 class="hero-heading">
+        <span class="h1-top">Hello, I'm</span>
+        <span class="h1-name">Kc<br/>Collado</span>
+      </h1>
+      <p class="hero-desc">
+        A passionate IT student crafting clean, functional web experiences.
+        From full-stack Laravel apps to polished front-end interfaces — I build things that work beautifully.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-blue">View My Work</a>
+        <a href="#contact" class="btn-outline">Say Hello →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">4</span>
+          <span class="stat-label">Languages</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="photo-frame">
+        <div class="photo-border-ring"></div>
+        <div class="photo-wrap">
+          <!-- Replace with your actual photo -->
+          <img src="k.jpg" alt="KC Collado" class="profile-img"
+               onerror="this.style.display='none'; document.getElementById('photoFallback').style.display='flex'"/>
+          <div class="photo-fallback" id="photoFallback">
+            <svg viewBox="0 0 200 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="82" r="48" fill="#1a56db" opacity="0.15"/>
+              <circle cx="100" cy="82" r="34" fill="#1a56db" opacity="0.22"/>
+              <path d="M100 52 C82 52 68 66 68 84 C68 102 82 116 100 116 C118 116 132 102 132 84 C132 66 118 52 100 52Z" fill="#1a56db" opacity="0.4"/>
+              <path d="M44 178 C44 152 70 134 100 134 C130 134 156 152 156 178" fill="#1a56db" opacity="0.18"/>
+              <text x="100" y="91" text-anchor="middle" font-family="Playfair Display" font-weight="900" font-size="32" fill="#1a56db">KC</text>
+              <text x="100" y="200" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#64748b">Upload your photo →</text>
+            </svg>
+            <p class="photo-hint">Replace <code>your-photo.jpg</code></p>
+          </div>
+        </div>
+        <div class="photo-badge">
+          <span>Available for Projects</span>
+          <span class="badge-dot"></span>
+        </div>
+      </div>
+      <div class="hero-deco-card">
+        <span class="deco-card-label">Currently Learning</span>
+        <span class="deco-card-value">Laravel · Advanced CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="section-tag">01 — About</div>
+    <div class="about-inner">
+      <div class="about-text-col">
+        <h2 class="section-heading">Who I Am</h2>
+        <p class="about-p">
+          I'm <strong>KC Collado</strong>, a 3rd year Bachelor of Science in Information Technology student 
+          with a genuine love for building things on the web. I specialize in crafting full-stack web applications 
+          that are both technically solid and visually polished.
+        </p>
+        <p class="about-p">
+          My journey in coding started with the fundamentals of C# and HTML/CSS, and has grown into building 
+          complete systems using Laravel and MySQL. I believe great software isn't just functional — it should 
+          also be a pleasure to use.
+        </p>
+        <div class="about-traits">
+          <div class="trait"><span class="trait-icon">⚡</span> Fast Learner</div>
+          <div class="trait"><span class="trait-icon">🎯</span> Detail-Oriented</div>
+          <div class="trait"><span class="trait-icon">🤝</span> Team Player</div>
+          <div class="trait"><span class="trait-icon">💡</span> Problem Solver</div>
+        </div>
+      </div>
+      <div class="about-aside">
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-label">Name</span>
+            <span class="info-value">KC Collado</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Degree</span>
+            <span class="info-value">BSIT</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Year</span>
+            <span class="info-value">3rd Year</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Focus</span>
+            <span class="info-value">Web Development</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Location</span>
+            <span class="info-value">Philippines 🇵🇭</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Status</span>
+            <span class="info-value status-open"><span class="pulse"></span>Open to Work</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="section-tag">02 — Skills</div>
+    <h2 class="section-heading">Tech Stack</h2>
+    <div class="skills-grid">
+
+      <div class="skill-tile">
+        <div class="skill-tile-top">
+          <div class="skill-badge cs">C#</div>
+          <div class="skill-pct">75%</div>
+        </div>
+        <h3>C#</h3>
+        <p>Object-oriented programming, logic building, string &amp; character manipulation</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+      </div>
+
+      <div class="skill-tile">
+        <div class="skill-tile-top">
+          <div class="skill-badge html">HTML</div>
+          <div class="skill-pct">90%</div>
+        </div>
+        <h3>HTML &amp; CSS</h3>
+        <p>Semantic markup, responsive layouts, animations, and modern CSS techniques</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+      </div>
+
+      <div class="skill-tile">
+        <div class="skill-tile-top">
+          <div class="skill-badge laravel">LV</div>
+          <div class="skill-pct">82%</div>
+        </div>
+        <h3>Laravel</h3>
+        <p>MVC architecture, Eloquent ORM, Breeze authentication, role-based access control</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:82%"></div></div>
+      </div>
+
+      <div class="skill-tile skill-tile--wide">
+        <div class="skill-tile-top">
+          <div class="skill-badge db">DB</div>
+          <div class="skill-pct">78%</div>
+        </div>
+        <h3>MySQL &amp; Database Design</h3>
+        <p>Relational database design, ERD modeling, migrations, query optimization, data relationships</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+      </div>
+
+      <div class="skill-tile skill-tile--wide">
+        <div class="skill-tile-top">
+          <div class="skill-badge tools">⚙</div>
+          <div class="skill-pct">70%</div>
+        </div>
+        <h3>Dev Tools &amp; Workflow</h3>
+        <p>Git version control, XAMPP, VS Code, browser DevTools, Composer, Laravel Artisan CLI</p>
+        <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="section-tag">03 — Projects</div>
+    <h2 class="section-heading">My Work</h2>
+    <div class="projects-grid">
+
+      <div class="proj-card proj-card--featured">
+        <div class="proj-img-area" style="--proj-color:#1a56db;">
+          <span class="proj-emoji">🌾</span>
+          <span class="proj-num">001</span>
+          <span class="proj-feat-tag">Featured</span>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tags">
+            <span>Laravel 11</span><span>MySQL</span><span>Breeze</span>
+          </div>
+          <h3>Farmers' Cooperative Web Portal</h3>
+          <p>Full-stack portal for Municipal Agriculture-Assisted Cooperatives. Three user roles with Member Management, Project Monitoring, Announcements, Attendance Tracking, and Report Generation modules.</p>
+          <div class="proj-footer">
+            <span class="proj-category">Capstone</span>
+            <a class="proj-link" href="#">View Project ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img-area" style="--proj-color:#0ea5e9;">
+          <span class="proj-emoji">🐾</span>
+          <span class="proj-num">002</span>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tags">
+            <span>Laravel 11</span><span>Chart.js</span>
+          </div>
+          <h3>Veterinary Record System</h3>
+          <p>Web system managing Animal Registry, Health Records, Livestock Ledger, and government BAPC/QRBA forms with live analytics dashboard.</p>
+          <div class="proj-footer">
+            <span class="proj-category">Capstone</span>
+            <a class="proj-link" href="#">View ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img-area" style="--proj-color:#3b82f6;">
+          <span class="proj-emoji">📋</span>
+          <span class="proj-num">003</span>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tags">
+            <span>Laravel</span><span>MySQL</span>
+          </div>
+          <h3>Thesis Monitoring System</h3>
+          <p>Tracks CICS student thesis progress across all stages with complete documentation, data dictionary, and methodology sections.</p>
+          <div class="proj-footer">
+            <span class="proj-category">Academic</span>
+            <a class="proj-link" href="#">View ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img-area" style="--proj-color:#60a5fa;">
+          <span class="proj-emoji">📧</span>
+          <span class="proj-num">004</span>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tags">
+            <span>Laravel</span><span>Gmail SMTP</span>
+          </div>
+          <h3>Admin Dashboard System</h3>
+          <p>Laravel admin dashboard with Gmail SMTP email notifications, custom admin guard, role-based access, and appreciation email workflows.</p>
+          <div class="proj-footer">
+            <span class="proj-category">Web App</span>
+            <a class="proj-link" href="#">View ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img-area" style="--proj-color:#2563eb;">
+          <span class="proj-emoji">🎓</span>
+          <span class="proj-num">005</span>
+        </div>
+        <div class="proj-content">
+          <div class="proj-tags">
+            <span>Laravel</span><span>Breeze</span><span>Chart.js</span>
+          </div>
+          <h3>Student Task Management</h3>
+          <p>CICS task management system with admin approval workflow, CRUD tasks, email notifications, and a Chart.js analytics dashboard.</p>
+          <div class="proj-footer">
+            <span class="proj-category">Academic</span>
+            <a class="proj-link" href="#">View ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card proj-card--cta">
+        <div class="proj-cta-inner">
+          <span class="proj-cta-icon">✦</span>
+          <h3>More Projects<br/>Coming Soon</h3>
+          <p>Always building something new. Check back soon or reach out to collaborate.</p>
+          <a href="#contact" class="btn-blue">Let's Connect</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="section-tag">04 — Contact</div>
+    <div class="contact-inner">
+      <div class="contact-left">
+        <h2 class="section-heading">Let's Work<br/><em>Together.</em></h2>
+        <p>Have a project in mind, a capstone collaboration, or just want to say hi? My inbox is always open.</p>
+        <div class="contact-links">
+          <a href="mailto:kccollado@email.com" class="contact-link">
+            <span class="contact-link-icon">✉</span>
+            <div>
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">kccollado@email.com</span>
+            </div>
+          </a>
+          <div class="contact-link">
+            <span class="contact-link-icon">📍</span>
+            <div>
+              <span class="contact-link-label">Location</span>
+              <span class="contact-link-val">Philippines 🇵🇭</span>
+            </div>
+          </div>
+          <div class="contact-link">
+            <span class="contact-link-icon">🎓</span>
+            <div>
+              <span class="contact-link-label">School</span>
+              <span class="contact-link-val">CICS — BSIT, 3rd Year</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <div class="contact-form-card">
+          <div class="form-field">
+            <label>Your Name</label>
+            <input type="text" placeholder="Kristine Claire Collado"/>
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" placeholder="claire@example.com"/>
+          </div>
+          <div class="form-field">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Hey KC, I'd love to collaborate on..."></textarea>
+          </div>
+          <button class="btn-blue btn-full">Send Message ✦</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">KC<span>·</span>Collado</div>
+      <p class="footer-copy">© 2025 KC Collado · BSIT Student · Built with HTML &amp; CSS</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
